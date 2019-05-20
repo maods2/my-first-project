@@ -2,11 +2,11 @@ import tweepy
 from textblob import TextBlob
 
 # Step 1 - Authenticate
-consumer_key= 'rm3PZ9TzVoZxBwoKRNKTnZx6V'
-consumer_secret= 'EhhzwZouxE4O5XwHLvGD25vr1aqw9X1lhpnjKNBLdtQEDZOW2F'
+consumer_key= ''
+consumer_secret= ''
 
-access_token='384518822-V5Bh19jOyCHYS5cc5kis7MWX5yjvSkc2XRrIDHNL'
-access_token_secret='9QeJGwXsT8upHBfR5RdDTG0xOSlGFxMZlUQgUXlnyNAs4'
+access_token=''
+access_token_secret=''
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -30,3 +30,4 @@ for tweet in public_tweets:
     analysis = TextBlob(tweet.text)
     print(analysis.sentiment)
     print("")
+  #fdf     
